@@ -17,7 +17,7 @@ Despite the repetitve nature of these queries, most waste management contact cen
 |:--------|:----------------------:|:-------------------------:|:------------------:|
 |Intent Recognition Accuracy|CX simulator test suite — % correct intent matches|Measure via test cases|> 85%|
 |Authentication Success Rate|% callers authenticated on first attempt | Measure from test log|> 95%|
-|Containment Rate| % calls fully resolved without human escalation |Measure via CX console >| 70%|
+|Containment Rate| % calls fully resolved without human escalation |Measure via CX console | >70%|
 |Average Handle Time (AHT)| Duration from call start to call end| Measure via Phone Gateway| < 3 minutes|
 |Webhook Response| Time Time from CX webhook call to function response |Measure via Cloud Logs |< 2 seconds|
 |No-Match Rate| % turns where no intent matched| Measure via CX console| < 10%|
