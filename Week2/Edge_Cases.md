@@ -1,9 +1,8 @@
-## This document outlines edge cases and exception handling scenarios for our voice agent.
+## This document outlines edge cases for our voice agent.
 
 ### 1. Invalid Address
 #### Scenario :
 The user provide an address that does not exist, cannot be validated, or is outside the service area.
-Callback : validateAddress()
 
 #### Agent Response:
 "We were unable to verify the address provided. Please confirm your service address."
@@ -19,7 +18,6 @@ Address Valid | Continue Registration|
 ### 2. Authentication Failure
 #### Scenario:
 Customer authentication fails due to incorrect credentials.
-Callback: authenticateCustomer()
 
 #### Agent Response:
 "I could not verify your account. Please try again."
@@ -49,16 +47,6 @@ Customer does not provide a service date.
 #### Scenario:
 The route management service is unavailable.
 
-Callback: checkRouteDelay()
-#### Failure Types
-- API timeout
-- HTTP 500
-- Service unavailable
-- Network failure
-- Expected Behavior
-- Retry API call.
-- Use cached data if available.
-- Continue workflow with limited information.
 
 #### Agent Response
 "I am currently unable to retrieve route information. Please try again shortly."
@@ -74,7 +62,6 @@ Callback: checkRouteDelay()
 #### No Available Pickup Slots
 ##### Scenario:
 All pickup slots for the request date are fully booked.
-Callback: checkAvailavility()
 #### Action : Suggest next available date.
 
 
